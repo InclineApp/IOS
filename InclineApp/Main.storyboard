@@ -16,33 +16,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="221" y="279" width="157.5" height="41.5"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD" text="The Dashboard" numberOfLines="0" preferredMaxLayoutWidth="250" fixedFrame="YES">
+                                <rect key="frame" x="175" y="279" width="250" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <rect key="frame" x="203" y="329" width="194.5" height="17"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This acts as the main panel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L" preferredMaxLayoutWidth="194" fixedFrame="YES">
+                                <rect key="frame" x="203" y="329" width="194" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
-                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="First" id="acW-dT-cKf"/>
-                    <navigationItem title="Thing" id="2602" key="navigationItem"/>
+                    <navigationItem title="Dashboard" id="2602" key="navigationItem"/>
                     <connections>
                         <segue id="5127" destination="3561" kind="show" identifier="Wang"/>
                     </connections>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -86,7 +83,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="975" y="127"/>
+            <point key="canvasLocation" x="1590" y="-36"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -136,7 +133,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="933" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="734" y="1027"/>
+            <point key="canvasLocation" x="1588" y="642"/>
         </scene>
         <scene sceneID="1658">
             <objects>
@@ -157,7 +154,7 @@
         </scene>
         <scene sceneID="3560">
             <objects>
-                <viewController id="3561" sceneMemberID="viewController" customClass="LogViewController">
+                <viewController id="3561" sceneMemberID="viewController" customClass="LogViewController" title="Log In">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3558"/>
                         <viewControllerLayoutGuide type="bottom" id="3559"/>
@@ -168,8 +165,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5140" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="277" y="285" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <rect key="frame" x="244" y="285" width="112" height="30"/>
+                                <state key="normal" title="forgot password">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -177,14 +174,30 @@
                                     <action selector="UIButton5140_TouchUpInside:" destination="3561" id="5677" eventType="touchUpInside"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="5692" translatesAutoresizingMaskIntoConstraints="NO" text="Log in page" numberOfLines="0" preferredMaxLayoutWidth="92">
+                                <rect key="frame" x="254" y="256" width="92" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="5707" firstAttribute="width" constant="92"/>
+                                    <constraint id="5708" firstAttribute="height" constant="21"/>
+                                </constraints>
+                            </label>
                         </subviews>
-                        <constraints>
-                            <constraint id="5141" firstItem="3562" firstAttribute="trailing" secondItem="5140" secondAttribute="trailing" constant="277"/>
-                            <constraint id="5142" firstItem="3562" firstAttribute="bottom" secondItem="5140" secondAttribute="bottom" constant="285"/>
-                        </constraints>
                         <accessibility key="accessibilityConfiguration" label="LogIn"/>
+                        <constraints>
+                            <constraint id="5705" firstItem="5692" firstAttribute="top" secondItem="3562" secondAttribute="top" constant="256"/>
+                            <constraint id="5706" firstItem="3562" firstAttribute="trailing" secondItem="5692" secondAttribute="trailing" constant="254"/>
+                            <constraint id="5709" firstItem="5140" firstAttribute="top" secondItem="5692" secondAttribute="bottom" constant="8"/>
+                            <constraint id="5710" firstItem="3562" firstAttribute="trailing" secondItem="5140" secondAttribute="trailing" constant="244"/>
+                            <constraint id="5711" firstItem="5140" firstAttribute="centerY" secondItem="3562" secondAttribute="centerY"/>
+                        </constraints>
                     </view>
                     <connections/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3563" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -192,7 +205,7 @@
         </scene>
         <scene sceneID="5135">
             <objects>
-                <viewController id="5136" sceneMemberID="viewController" customClass="ForgetPasswordViewController">
+                <viewController id="5136" sceneMemberID="viewController" customClass="ForgetPasswordViewController" title="Forgot Password">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5133"/>
                         <viewControllerLayoutGuide type="bottom" id="5134"/>
@@ -202,6 +215,8 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5138" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
