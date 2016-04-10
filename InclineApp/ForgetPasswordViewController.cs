@@ -6,6 +6,10 @@ namespace InclineApp
 {
     public partial class ForgetPasswordViewController : UIViewController
     {
+        /// <summary>
+        /// Constructs a ForgetPasswordViewController.
+        /// </summary>
+        /// <param name="handle"></param>
         public ForgetPasswordViewController(IntPtr handle) : base(handle)
         {
         }
