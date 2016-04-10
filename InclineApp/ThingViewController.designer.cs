@@ -11,9 +11,13 @@ using UIKit;
 
 namespace InclineApp
 {
-	[Register ("FirstViewController")]
-	partial class FirstViewController
+	[Register ("ThingViewController")]
+	partial class ThingViewController
 	{
+		[Action ("UIButton1211_TouchUpInside:")]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		partial void UIButton1211_TouchUpInside (UIButton sender);
+
 		void ReleaseDesignerOutlets ()
 		{
 		}

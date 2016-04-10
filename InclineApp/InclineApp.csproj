@@ -84,12 +84,22 @@
     <CodesignKey>iPhone Distribution</CodesignKey>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="LogViewController.cs" />
+    <Compile Include="LogViewController.designer.cs">
+      <DependentUpon>LogViewController.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="ThingViewController.cs" />
+    <Compile Include="ThingViewController.designer.cs">
+      <DependentUpon>ThingViewController.cs</DependentUpon>
+    </Compile>
     <None Include="GettingStarted.Xamarin" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
+    <InterfaceDefinition Include="ThingViewController.xib" />
+    <InterfaceDefinition Include="LogViewController.xib" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FirstViewController.cs" />

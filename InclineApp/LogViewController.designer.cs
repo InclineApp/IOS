@@ -11,8 +11,8 @@ using UIKit;
 
 namespace InclineApp
 {
-	[Register ("FirstViewController")]
-	partial class FirstViewController
+	[Register ("LogViewController")]
+	partial class LogViewController
 	{
 		void ReleaseDesignerOutlets ()
 		{
