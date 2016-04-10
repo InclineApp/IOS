@@ -11,13 +11,9 @@ using UIKit;
 
 namespace InclineApp
 {
-	[Register ("LogViewController")]
-	partial class LogViewController
+	[Register ("ForgetPasswordViewController")]
+	partial class ForgetPasswordViewController
 	{
-		[Action ("UIButton5140_TouchUpInside:")]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		partial void UIButton5140_TouchUpInside (UIButton sender);
-
 		void ReleaseDesignerOutlets ()
 		{
 		}

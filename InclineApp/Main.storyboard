@@ -166,12 +166,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5140" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue id="5675" destination="5136" kind="show" identifier="WWang"/>
+                                    <action selector="UIButton5140_TouchUpInside:" destination="3561" id="5677" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="5141" firstItem="3562" firstAttribute="trailing" secondItem="5140" secondAttribute="trailing" constant="277"/>
+                            <constraint id="5142" firstItem="3562" firstAttribute="bottom" secondItem="5140" secondAttribute="bottom" constant="285"/>
+                        </constraints>
+                        <accessibility key="accessibilityConfiguration" label="LogIn"/>
                     </view>
                     <connections/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3563" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2309" y="-717"/>
+        </scene>
+        <scene sceneID="5135">
+            <objects>
+                <viewController id="5136" sceneMemberID="viewController" customClass="ForgetPasswordViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5133"/>
+                        <viewControllerLayoutGuide type="bottom" id="5134"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5137">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5138" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3041" y="-717"/>
         </scene>
     </scenes>
     <resources>

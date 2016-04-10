@@ -4,9 +4,9 @@ using UIKit;
 
 namespace InclineApp
 {
-    public partial class LogViewController : UIViewController
+    public partial class ForgetPasswordViewController : UIViewController
     {
-        public LogViewController(IntPtr handle) : base(handle)
+        public ForgetPasswordViewController(IntPtr handle) : base(handle)
         {
         }
 
@@ -22,11 +22,6 @@ namespace InclineApp
             base.ViewDidLoad();
 
             // Perform any additional setup after loading the view, typically from a nib.
-        }
-
-        partial void UIButton5140_TouchUpInside(UIButton sender)
-        {
-            //PerformSegue("WWang", this);
         }
     }
 }

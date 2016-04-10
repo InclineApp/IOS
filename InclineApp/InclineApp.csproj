@@ -84,6 +84,10 @@
     <CodesignKey>iPhone Distribution</CodesignKey>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ForgetPasswordViewController.cs" />
+    <Compile Include="ForgetPasswordViewController.designer.cs">
+      <DependentUpon>ForgetPasswordViewController.cs</DependentUpon>
+    </Compile>
     <Compile Include="LogViewController.cs" />
     <Compile Include="LogViewController.designer.cs">
       <DependentUpon>LogViewController.cs</DependentUpon>
@@ -94,6 +98,7 @@
     <Compile Include="ThingViewController.designer.cs">
       <DependentUpon>ThingViewController.cs</DependentUpon>
     </Compile>
+    <InterfaceDefinition Include="ForgetPasswordViewController.xib" />
     <None Include="GettingStarted.Xamarin" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
